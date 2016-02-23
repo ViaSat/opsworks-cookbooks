@@ -1,0 +1,12 @@
+{
+  "name": "chromium",
+  "description": "Installs/symlinks chromium",
+  "long_description": "= DESCRIPTION:\n\nInstalls chromium from zip.\n\n= REQUIREMENTS:\n\nDebian or Ubuntu.\n\n= ATTRIBUTES:\n\nchromium.user (default deploy) - user's home dir to install to\nchromium.location - location to fetch zip from\nchromium.expand - location to expand chromium zip to\nchromium.symlink - name of symlink to write to /usr/bin\n\n",
+  "maintainer": "Greg Cochard",
+  "maintainer_email": "",
+  "license": "apachev2",
+  "platforms": {
+    "debian": ">= 0.0.0"
+  },
+  "version": "0.0.1"
+}

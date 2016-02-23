@@ -1,0 +1,17 @@
+= DESCRIPTION:
+
+Installs Xvfb X server and runs it on specified port in init-time.
+
+= REQUIREMENTS:
+
+Debian. Possibly also Ubuntu.
+
+= ATTRIBUTES:
+
+xvfb.display (default 0) - DISPLAY of Xvfb server
+
+node[:xvfb][:WxHxD] = "1024x768x24"
+This option creates screen screennum and sets its width, height, and depth to W, H, and D respectively. Default value: "1024x768x24"
+
+= USAGE:
+
