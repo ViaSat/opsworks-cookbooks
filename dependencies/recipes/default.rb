@@ -17,6 +17,10 @@ when 'centos','redhat','fedora','amazon'
     end
   end
 when 'debian','ubuntu'
+  Chef::Log.info("Running apt-get update")
+  execute 'apt-get update' do
+    action :run
+  end
   node[:dependencies][:debs].each do |deb, version|
     Chef::Log.info("preparing installation of dependency: dpkg #{deb.inspect}")
     package deb do
